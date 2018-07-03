@@ -26,7 +26,7 @@ img, .work {
 h1,
 h2,
 h3,
-p {
+p, .link {
   margin-bottom: 20px;
 }
 
