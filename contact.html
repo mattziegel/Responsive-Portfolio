@@ -40,7 +40,7 @@
             <textarea id="message" name="message" required="required"></textarea>
           </li>
         </ul>
-        <input type="submit">
+        <input type="submit" onclick="send()">
       </form>
 
     </section>
@@ -49,9 +49,20 @@
 
   <footer>
     <div class="container">
-      Copyright &copy; 
+      Copyright &copy;
     </div>
   </footer>
 </body>
+<script type="text/javascript">
 
+  function send() {
+    var link = 
+    "mailto:lefylang37@gmail.com" + 
+    "?subject=Portfolio message from " + $("#name").val().trim() +
+    "&body=" + $("#message").val().trim();
+    window.location.href = link;
+
+    console.log("I've been sent!");
+}
+</script>
 </html>
